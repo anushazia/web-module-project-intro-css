@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 } 
 body {
-	line-height:1;
+	line-height:1.5;
 }
 ol, ul {
 	list-style: none;
@@ -52,7 +52,7 @@ q:before, q:after {
 *{
     box-sizing: border-box;
     max-width:100%;
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 
 /*styling*/
@@ -62,15 +62,27 @@ html{
 body{
     font-size: 1.6rem;
     line-height:1.5;
+    color: black;
 }
 h1{
     font-family: 'Chelsea Market', cursive;
-    font-size: 5rem;
+    font-size: 4rem;
     color: black;
+}
+h2{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 2rem;
+    color: black;
+}
+.text p{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 2rem;
+    color: black;
+    line-height:1.5;
 }
 section{
     padding:4% 0;
-    width:90%;
+    width:80%;
     margin:0 auto;
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -85,10 +97,10 @@ nav{
     justify-content:space-around;
 }
 nav a{
-    display:inline-block;
+    display:flex;
     border-radius:10px;
     text-align:center;
-    padding:1% 0;
+    padding:20px 20px;
 }
 .orange{
     background-color:#FF764E;
@@ -104,7 +116,7 @@ nav a{
     display:flex;
 }
 .left{
-    width:40%;
+    width:35%;
     display:flex;
     justify-content: center;
     align-items: middle;
@@ -123,33 +135,47 @@ nav a{
 
 .info{
     background-color:#DDB9A3;
-    padding:4%;
+    padding:3%;
 }
 .info p{
-    margin:2% 0;
+    margin:3%;
+    font-size: 1.6rem;
 }
 .campfire{
     display:flex;
     flex-direction:column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 18%;
-    margin-left: 40%;
-    margin-top: 5%;
 }
-.camper{
-    text-align:center;
-    width: 18%;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 40%;
+.campfire img{
+    width: 50%;
+    text-align: center;
+    margin: 3% 0;
 }
-.camper p{
-    font-family: 'Roboto Mono', monospace;
+.campfire div{
+width: 30%;
+text-align: center;
 }
+
 .campfire p{
-     font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;     
+    color: black;
+    align-items: center;
+    align-content: center;
 }
-.bold{
-    font-weight: bold;
+.footimg img{
+    background-image:url('assests/footer_img.jpg');
+    background-size: cover;
+    background-image: top;
+    background-repeat: no-repeat;
+    height: 40vh;}
+* p{
+font-weight: bold;
+}
+footer{
+    background-color:#F9E7DC;
 }
